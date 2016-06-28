@@ -35,6 +35,10 @@ SWUPD_BUNDLES ?= " \
     world-dev \
     qa-bundle-a \
     qa-bundle-b \
+    smarthome-fan-bundle \
+    smarthome-solar-bundle \
+    smarthome-ocf-servers-bundle \
+    smarthome-gateway-bundle \
 "
 
 # os-core defined via additional image features maintained in ostro-image.bbclass.
@@ -85,6 +89,22 @@ BUNDLE_CONTENTS[qa-bundle-a] = " \
 BUNDLE_CONTENTS[qa-bundle-b] = " \
     hello-bundle-b \
     hello-bundle-s \
+"
+
+BUNDLE_CONTENTS[smarthome-fan-bundle] = " \
+    smarthome-fan \
+"
+
+BUNDLE_CONTENTS[smarthome-ocf-servers-bundle] = " \
+    smarthome-ocf-servers \
+"
+
+BUNDLE_CONTENTS[smarthome-solar-bundle] = " \
+    smarthome-solar \
+"
+
+BUNDLE_CONTENTS[smarthome-gateway-bundle] = " \
+    smarthome-gateway \
 "
 
 # When swupd bundles are enabled, choose explicitly which images
